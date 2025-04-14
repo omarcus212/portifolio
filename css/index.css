@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-green-color: #08292D;
+    --light-green-color: #DFF9FC;
+    --main-color: #dff9fc;
+    --black: #000;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 800px;
+    
+}
+
+.menu-link{
+    display: flex;
+    width: 100%;
+    height: 6%;
+    gap: 100px;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--dark-green-color);
+
+}
+
+ul,li,a{
+    display: flex;
+    text-decoration: none;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: var(--light-green-color);
+    font-size: clamp(0.5em, 1.2vw, 2rem);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.container-profile{
+    display: flex;
+    width: 100%;
+    height: 94%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.container-presentation{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 120px;
+}
+
+.text-hi,.text-dev{
+    color: var(--dark-green-color);
+    font-size: clamp(0.5em, 1.2vw, 2rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-wrap: wrap;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+    text-align: start;
+
+}
+
+.text-name{
+    display: flex;
+    color: var(--dark-green-color);
+    font-size: clamp(1em, 3vw, 4rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    text-wrap: wrap;
+    word-spacing: 5px;
+    letter-spacing: 20px;
+    justify-content: center;
+    text-align: start;
+}
+
+.drop-cv{
+    display: flex;
+    margin-top: 50px;
+    border: none;
+    width: 400px;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--dark-green-color);
+    color: var(--light-green-color);
+    cursor: pointer;
+    
+}
+
+.container-foto {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    width: clamp(100px, 35vw, 400px);
+}
+
