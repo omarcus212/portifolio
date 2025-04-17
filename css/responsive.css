@@ -46,6 +46,25 @@
     .foto {
         width: clamp(120px, 50vw, 300px);
     }
+
+    .over-title {
+        letter-spacing: 5px;
+    }
+
+    .over-texte {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .container-over {
+        gap: 20px;
+    }
+
+    #over {
+        padding: 30px 15px;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -78,5 +97,24 @@
 
     .foto {
         width: clamp(100px, 70vw, 250px);
+    }
+
+    .over-title {
+        letter-spacing: 5px;
+    }
+
+    .over-texte {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .container-over {
+        gap: 20px;
+    }
+
+    #over {
+        padding: 30px 15px;
+        gap: 30px;
     }
 }
