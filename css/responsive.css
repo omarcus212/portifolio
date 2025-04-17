@@ -47,21 +47,21 @@
         width: clamp(120px, 50vw, 300px);
     }
 
-    .over-title {
+    .about-title {
         letter-spacing: 5px;
     }
 
-    .over-texte {
+    .about-texte {
         width: 100%;
         text-align: center;
         padding: 0 10px;
     }
 
-    .container-over {
+    .container-about {
         gap: 20px;
     }
 
-    #over {
+    #about {
         padding: 30px 15px;
         gap: 30px;
     }
@@ -99,21 +99,21 @@
         width: clamp(100px, 70vw, 250px);
     }
 
-    .over-title {
+    .about-title {
         letter-spacing: 5px;
     }
 
-    .over-texte {
+    .about-texte {
         width: 100%;
         text-align: center;
         padding: 0 10px;
     }
 
-    .container-over {
+    .container-about {
         gap: 20px;
     }
 
-    #over {
+    #about {
         padding: 30px 15px;
         gap: 30px;
     }
