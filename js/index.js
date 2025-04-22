@@ -7,9 +7,9 @@ const createCard = () => {
     var cardDiv = ""
 
     Cards.forEach(element => {
+        console.log(element)
 
         cardDiv +=
-
             `
             <a href="${element.respositorio}" class="card-project">
             <div class="card" id=${element.id}>
@@ -53,7 +53,7 @@ function handleScroll() {
     } else {
         projeto.style.backgroundColor = ''
         sections.style.backgroundColor = ''
-        footer.style.backgroundColor = ''
+
     }
 }
 

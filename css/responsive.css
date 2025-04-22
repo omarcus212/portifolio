@@ -65,6 +65,10 @@
         padding: 30px 15px;
         gap: 30px;
     }
+
+    .container-project{
+      gap: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -117,4 +121,6 @@
         padding: 30px 15px;
         gap: 30px;
     }
+
+   
 }
