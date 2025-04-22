@@ -35,20 +35,20 @@ createCard()
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
-    return rect.top <= window.innerHeight && rect.bottom >= 0;
+    return rect.top <= window.innerHeight;
 }
 
 function handleScroll() {
     const sections = document.getElementById('about');
     const projeto = document.getElementById('project');
-    const footer = document.getElementById('footer');
+
     const projetoSection = document.getElementById('container-project');
 
     if (isInViewport(projetoSection)) {
 
-        projeto.style.backgroundColor = '#08292D'
-        sections.style.backgroundColor = '#08292D'
-        footer.style.backgroundColor = '#08292D'
+        projeto.style.backgroundColor = '#1B2A41'
+        sections.style.backgroundColor = '#1B2A41'
+
 
     } else {
         projeto.style.backgroundColor = ''
