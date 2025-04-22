@@ -12,7 +12,7 @@
     <header>
       <span class="menu-link">
         <ul>
-          <li><a href="">Projetos</a></li>
+          <li><a href="#project">Projetos</a></li>
         </ul>
         <ul>
           <li><a href="#about">Sobre</a></li>
@@ -30,18 +30,19 @@
           <a
             class="drop-cv"
             id="cv"
-            download="image/Marcus_Vinnicius_DesenvolvedorJr.pdf"
-            >Download CV</a
-          >
+            href="image/Marcus_Vinnicius_DesenvolvedorJr.pdf"
+            download="Marcus_Vinnicius_DesenvolvedorJr"
+            >Download CV
+          </a>
         </span>
         <span class="container-foto">
-          <img class="foto" src="image/foto.png" alt="carregando!" />
+          <img class="foto" src="image/foto.png" alt="loading!" />
         </span>
       </div>
     </header>
 
     <main>
-      <section id="about">
+      <section id="about" class="section">
         <hr />
         <div class="container-about">
           <span class="about-title">Sobre</span>
@@ -60,6 +61,18 @@
         </div>
         <hr />
       </section>
+
+      <section id="project" class="section">
+        <span class="about-title">Projetos</span>
+
+        <div class="container-project" id="container-project"></div>
+      </section>
     </main>
+    <footer>
+      <h2 class="title-footer">Contato</h2>
+
+      <p class="email">marcusvinniciusouza@gmail.com</p>
+      <p class="number">(11) 9327-15817</p>
+    </footer>
   </body>
 </html>

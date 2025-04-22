@@ -1,5 +1,62 @@
 'use Strict'
+import Cards from './card.js'
 
-document.getElementById('cv').addEventListener('click', () => {
+const createCard = () => {
 
-});
+    var container = document.getElementById("container-project")
+    var cardDiv = ""
+
+    Cards.forEach(element => {
+
+        cardDiv +=
+
+            `
+            <a href="${element.respositorio}" class="card-project">
+            <div class="card" id=${element.id}>
+            <span class="card-img" > 
+            <img
+              class="img-project"
+              src="${element.image}"
+              alt="loading!"
+            />
+            </span>
+            <p class="text-name-project">${element.nome}</p>
+             </a>
+          </div>
+    `
+    });
+
+    container.innerHTML = cardDiv
+
+}
+
+createCard()
+
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
+
+function handleScroll() {
+    const sections = document.getElementById('about');
+    const projeto = document.getElementById('project');
+    const footer = document.getElementById('footer');
+    const projetoSection = document.getElementById('container-project');
+
+    if (isInViewport(projetoSection)) {
+
+        projeto.style.backgroundColor = '#08292D'
+        sections.style.backgroundColor = '#08292D'
+        footer.style.backgroundColor = '#08292D'
+
+    } else {
+        projeto.style.backgroundColor = ''
+        sections.style.backgroundColor = ''
+        footer.style.backgroundColor = ''
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+handleScroll();
