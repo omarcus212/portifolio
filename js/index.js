@@ -11,18 +11,18 @@ const createCard = () => {
 
         cardDiv +=
             `
-            <a href="${element.respositorio}" class="card-project">
-            <div class="card" id=${element.id}>
-            <span class="card-img" > 
-            <img
-              class="img-project"
-              src="${element.image}"
-              alt="loading!"
-            />
-            </span>
-            <p class="text-name-project">${element.nome}</p>
-             </a>
-          </div>
+           <a href="${element.respositorio}" class="card-project">
+            <div class="card" id="${element.id}">
+              <span class="card-img">
+                <img
+                  class="img-project"
+                  src="${element.image}"
+                  alt="loading!"
+                />
+              </span>
+              <p class="text-name-project">${element.nome}</p>
+            </div>
+          </a> 
     `
     });
 

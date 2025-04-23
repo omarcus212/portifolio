@@ -157,10 +157,9 @@ hr{
 .container-about{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
 }
 
 .about-title{
@@ -220,10 +219,10 @@ section > .about-title:nth-child(1){
     flex-direction: column;
     width: auto;
     height: 265px;
-    gap: 5%;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 5px;
 }
 
 .card-img{
@@ -245,7 +244,8 @@ section > .about-title:nth-child(1){
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     text-wrap: wrap;
-    max-width: 200px;
+    max-width: 180px;
+    height: 80px;
     letter-spacing:2px;
     color: var(--blue-text);
     text-align: center;

@@ -5,7 +5,7 @@ const Cards = [{
     image: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
 }, {
     id: 2,
-    nome: "API PHP e Docker - Sistemas de Produtos",
+    nome: "API PHP e Docker Sis. de Produtos",
     respositorio: "https://github.com/omarcus212/backend-estagio",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
 }, {
