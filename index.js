@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Puxar projetos do GitHub com foco estratégico (adiciona demo links se possível)
     const username = 'omarcus212';
-    fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=7`)
+    fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=8`)
         .then(response => response.json())
         .then(data => {
 
             const container = document.getElementById('projects-container');
             data.forEach(repo => {
-                if (repo.name !== 'omarcus212') {
+                if (repo.name !== 'omarcus212' && repo.name !== 'portifolio') {
                 const card = document.createElement('div');
                 card.classList.add('project-card');
                 card.innerHTML = `
