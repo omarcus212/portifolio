@@ -1,119 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio de Marcus Vinnicius - Backend Developer</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js" type="module"></script>
-</head>
-<body class="dark-mode">
+  </head>
+  <body class="dark-mode">
     <header>
-        <nav>
-            <div class="logo">Marcus Vinnicius</div>
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <button id="mode-toggle">🌙 Dark / ☀️ Light</button>
-        </nav>
-        <div class="container-profile">
-            <span class="container-presentation">
-                <h1>Olá, sou Marcus Vinnicius</h1>
-                <p>Desenvolvedor Back-end Júnior | Especialista em PHP, Node.js, Java e APIs RESTful</p>
-                <a class="drop-cv" href="image/Marcus_Vinnicius_Desenvolvedor_Jr_2026 .pdf" download>Download CV</a>
-            </span>
-            <span class="container-foto">
-                <img class="foto" src="image/foto.png" alt="Marcus Vinnicius">
-            </span>
-        </div>
+      <nav>
+        <div class="logo">Marcus Vinnicius</div>
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <button id="mode-toggle">🌙 Dark / ☀️ Light</button>
+      </nav>
+      <div class="container-profile">
+        <span class="container-presentation">
+          <h1>Olá, sou Marcus Vinnicius</h1>
+          <p>
+            Desenvolvedor Back-end Júnior | Especialista em PHP, Node.js, Java e
+            APIs RESTful
+          </p>
+          <a
+            class="drop-cv"
+            href="image/Marcus_Vinnicius_DesenvolvedorJr_2026.pdf"
+            download
+            >Download CV</a
+          >
+        </span>
+        <span class="container-foto">
+          <img class="foto" src="image/foto.png" alt="Marcus Vinnicius" />
+        </span>
+      </div>
     </header>
-    
+
     <main>
-        <section id="about" class="section">
-            <h2>Sobre Mim</h2>
-            <p>Desenvolvedor de Software com foco em Back-end, com conhecimentos em PHP (Slim Framework, 
-                Laravel), Node.js, TypeScript e Java, além de atuação em Front-end com HTML5, CSS3, JavaScript 
-                (ES6+), React.js, SASS, Tailwind CSS e Figma. 
-                Possui familiaridade com bancos de dados SQL e NoSQL, Docker, CI/CD e metodologias ágeis como 
-                Scrum e Kanban. Possui boa lógica de programação e experiência no desenvolvimento de APIs RESTful e 
-                interfaces web responsivas. Destaca-se nas habilidades em resolução de problemas, adaptabilidade e 
-                trabalho em equipe. Busca uma oportunidade júnior ou estágio para desenvolver suas competências e 
-                contribuir com soluções criativas. </p>
-        </section>
-        
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>PHP (Laravel, Slim) <span class="badge">Intermediário</span></li>
-                <li>Java (Spring Boot) <span class="badge">Prático</span></li>
-                <li>Node.js & TypeScript <span class="badge">Intermediário</span></li>
-                <li>JavaScript & React <span class="badge">Intermediário</span></li>
-                <li>SQL/NoSQL Databases <span class="badge">Intermediário</span></li>
-                <li>Ágil (Scrum/Kanban) <span class="badge">Prático</span></li>
-                <li>CI/CD & Git <span class="badge">Intermediário</span></li>
+      <section id="about" class="section">
+        <h2>Sobre Mim</h2>
+        <p>
+          Desenvolvedor de Software com foco em Back-end, com conhecimentos em
+          PHP (Slim Framework, Laravel), Node.js, TypeScript e Java, além de
+          atuação em Front-end com HTML5, CSS3, JavaScript (ES6+), React.js,
+          SASS, Tailwind CSS e Figma. Possui familiaridade com bancos de dados
+          SQL e NoSQL, Docker, CI/CD e metodologias ágeis como Scrum e Kanban.
+          Possui boa lógica de programação e experiência no desenvolvimento de
+          APIs RESTful e interfaces web responsivas. Destaca-se nas habilidades
+          em resolução de problemas, adaptabilidade e trabalho em equipe. Busca
+          uma oportunidade júnior ou estágio para desenvolver suas competências
+          e contribuir com soluções criativas.
+        </p>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>PHP (Laravel, Slim) <span class="badge">Intermediário</span></li>
+          <li>Java (Spring Boot) <span class="badge">Prático</span></li>
+          <li>Node.js & TypeScript <span class="badge">Intermediário</span></li>
+          <li>JavaScript & React <span class="badge">Intermediário</span></li>
+          <li>SQL/NoSQL Databases <span class="badge">Intermediário</span></li>
+          <li>Ágil (Scrum/Kanban) <span class="badge">Prático</span></li>
+          <li>CI/CD & Git <span class="badge">Intermediário</span></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projetos Destacados</h2>
+        <div class="container-project" id="projects-container"></div>
+      </section>
+
+      <section id="experience" class="section">
+        <span class="about-title">Experiência Profissional & Certificados</span>
+        <div class="experience-container">
+          <div class="experience-item">
+            <h3>Fisacorp Technology Solutions - Desenvolvedor Full Stack</h3>
+            <p class="date">Jul/2025 a Dez/2025</p>
+            <ul>
+              <li>
+                Atuei temporariamente como PJ, apoiando o time no
+                desenvolvimento e manutenção dos projetos.
+              </li>
+              <li>
+                Contribuí na implementação de novas funcionalidades, correções e
+                melhorias contínuas.
+              </li>
+              <li>
+                Garantindo a continuidade das entregas e oferecendo suporte
+                técnico conforme as demandas da equipe e dos gestores.
+              </li>
             </ul>
-        </section>
-        
-        <section id="projects" class="section">
-            <h2>Projetos Destacados</h2>
-            <div class="container-project" id="projects-container"></div>
-        </section>
-        
-        <section id="experience" class="section">
-            <span class="about-title">Experiência Profissional & Certificados</span>
-            <div class="experience-container">
-                <div class="experience-item">
-                    <h3>Fisacorp Technology Solutions - Desenvolvedor Full Stack</h3>
-                    <p class="date">Jul/2025 a Dez/2025</p>
-                    <ul>
-                        <li>Atuei temporariamente como PJ, apoiando o time no desenvolvimento e manutenção dos projetos.</li>
-                        <li>Contribuí na implementação de novas funcionalidades, correções e melhorias contínuas.</li>
-                        <li>Garantindo a continuidade das entregas e oferecendo suporte técnico conforme as demandas da equipe e dos gestores.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Sincro Soluções - Assistente de Programação</h3>
-                    <p class="date">Mai/2024 a Ago/2024</p>
-                    <ul>
-                        <li>Participou do desenvolvimento de sistemas de transporte e rastreamento.</li>
-                        <li>Realizou manutenção de sistemas, garantindo funcionalidade e performance.</li>
-                        <li>Tecnologias utilizadas: Angular com Typescript, MySQL, Tailwind, Saas, Metodologia ágil com ferramentas Jira e Figma.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>UP! Technology - Analista de Desenvolvimento de Sistemas Júnior</h3>
-                    <p class="date">Abr/2023 a Nov/2023</p>
-                    <ul>
-                        <li>Desenvolveu sistemas (back-end e front-end) para gerenciamento de cartões.</li>
-                        <li>Aprimorou e implementou melhorias de segurança no back-end com criptografia.</li>
-                        <li>Aprimorou o front-end, aumentando a eficiência do uso.</li>
-                        <li>Tecnologias utilizadas: PHP, Node, React, Sass, PostgreSQL, MySQL e Python.</li>
-                    </ul>
-                </div>
-                <div class="experience-item certificates">
-                    <h3>Cursos e Certificados</h3>
-                    <ul>
-                        <li>Técnico em Desenvolvimento de Sistemas – SENAI – Jun/2021 a Dez/2022</li>
-                        <li>CI/CD – UDEMY – Mai/2024</li>
-                        <li>Excel e Word – Bradesco – Fev/2021</li>
-                        <li>Hardware e Software – Bradesco – Out/2020</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="experience-item">
+            <h3>Sincro Soluções - Assistente de Programação</h3>
+            <p class="date">Mai/2024 a Ago/2024</p>
+            <ul>
+              <li>
+                Participou do desenvolvimento de sistemas de transporte e
+                rastreamento.
+              </li>
+              <li>
+                Realizou manutenção de sistemas, garantindo funcionalidade e
+                performance.
+              </li>
+              <li>
+                Tecnologias utilizadas: Angular com Typescript, MySQL, Tailwind,
+                Saas, Metodologia ágil com ferramentas Jira e Figma.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>
+              UP! Technology - Analista de Desenvolvimento de Sistemas Júnior
+            </h3>
+            <p class="date">Abr/2023 a Nov/2023</p>
+            <ul>
+              <li>
+                Desenvolveu sistemas (back-end e front-end) para gerenciamento
+                de cartões.
+              </li>
+              <li>
+                Aprimorou e implementou melhorias de segurança no back-end com
+                criptografia.
+              </li>
+              <li>Aprimorou o front-end, aumentando a eficiência do uso.</li>
+              <li>
+                Tecnologias utilizadas: PHP, Node, React, Sass, PostgreSQL,
+                MySQL e Python.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item certificates">
+            <h3>Cursos e Certificados</h3>
+            <ul>
+              <li>
+                Técnico em Desenvolvimento de Sistemas – SENAI – Jun/2021 a
+                Dez/2022
+              </li>
+              <li>CI/CD – UDEMY – Mai/2024</li>
+              <li>Excel e Word – Bradesco – Fev/2021</li>
+              <li>Hardware e Software – Bradesco – Out/2020</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer id="contact">
-        <h2>Contato</h2>
-        <p>Email: marcusvinniciusouza@gmail.com</p>
-        <p>Telefone: <a href="https://wa.me/5511932715817" target="_blank">(11) 9327-15817</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/marcus-vinnicius-524aa1206/">Marcus Vinnicius</a></p>
-        <p>GitHub: <a href="https://github.com/omarcus212">omarcus212</a></p>
-        <p>&copy; 2026 Marcus Vinnicius</p>
+      <h2>Contato</h2>
+      <p>Email: marcusvinniciusouza@gmail.com</p>
+      <p>
+        Telefone:
+        <a href="https://wa.me/5511932715817" target="_blank"
+          >(11) 9327-15817</a
+        >
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/marcus-vinnicius-524aa1206/"
+          >Marcus Vinnicius</a
+        >
+      </p>
+      <p>GitHub: <a href="https://github.com/omarcus212">omarcus212</a></p>
+      <p>&copy; 2026 Marcus Vinnicius</p>
     </footer>
-</body>
+  </body>
 </html>
