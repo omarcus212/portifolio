@@ -25,8 +25,9 @@ Substitua imagens e links no HTML conforme necessário.
 
 ## Contato
 
-Email: marcusvinniciusouza@gmail.com
-WhatsApp: (11) 9327-15817
-LinkedIn: omarcus212
+- Email: marcusvinniciusouza@gmail.com
+- WhatsApp: (11) 9327-15817
+- LinkedIn: omarcus212
+
 
 © 2026 Marcus Vinnicius. All rights reserved.
